@@ -19,7 +19,6 @@ body {
     padding: 1rem 2rem;
     position: relative;
     z-index: 10;
-    
 }
 
 header {
@@ -118,12 +117,46 @@ nav ul li a:hover {
     z-index: 10;
 }
 
+/* Botones del slider para dispositivos móviles */
 .prev {
-    left: 0;
+    left: 10px; /* Ajusta el espacio desde el borde izquierdo */
 }
 
 .next {
-    right: 0;
+    right: 10px; /* Ajusta el espacio desde el borde derecho */
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .slider {
+        height: 300px; /* Ajusta la altura del slider en dispositivos móviles */
+    }
+    
+    .slider-control {
+        font-size: 1.5rem; /* Ajusta el tamaño de fuente para dispositivos móviles */
+        padding: 0.25rem; /* Ajusta el padding para dispositivos móviles */
+    }
+
+    .prev, .next {
+        width: 40px; /* Ajusta el tamaño del botón en dispositivos móviles */
+        height: 40px; /* Ajusta el tamaño del botón en dispositivos móviles */
+        line-height: 40px; /* Ajusta la altura de línea para centrar el texto */
+    }
+
+    nav ul {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        align-items: center; /* Centra los elementos en el contenedor */
+    }
+
+    nav ul li {
+        width: 100%; /* Asegura que los elementos ocupen todo el ancho disponible */
+        text-align: center; /* Centra el texto dentro de cada elemento */
+    }
+
+    nav ul li a {
+        padding: 1rem; /* Aumenta el padding para mayor espacio en dispositivos móviles */
+        font-size: 1.2rem; /* Aumenta el tamaño de fuente para mejorar la legibilidad */
+    }
 }
 
 /* Sección Misión y Visión */
@@ -131,7 +164,7 @@ nav ul li a:hover {
     padding: 2rem 1rem;
     text-align: center;
 }
-.mision h2, .vision h2, .categorias h2, .contacto h2{
+.mision h2, .vision h2, .categorias h2, .contacto h2 {
     color: #a52a2a;
 }
 
@@ -203,7 +236,6 @@ nav ul li a:hover {
 .pedido-btn:hover {
     background: #a52a2a; /* Rojo marrón más oscuro */
 }
-
 
 /* Contacto */
 .contacto {
