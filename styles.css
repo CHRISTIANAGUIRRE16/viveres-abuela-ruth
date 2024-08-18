@@ -94,7 +94,7 @@ nav ul li a:hover {
     min-width: 100%;
     box-sizing: border-box;
     position: relative;
-    display: flex;
+    display: grid;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
 }
