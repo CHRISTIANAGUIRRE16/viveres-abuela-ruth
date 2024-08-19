@@ -66,11 +66,12 @@ nav ul li a {
     text-decoration: none;
     font-size: 1rem;
     padding: 0.5rem 1rem; /* Añade espacio alrededor del texto */
-    transition: background-color 0.3s, color 0.3s;
     display: block; /* Asegura que el área clickeable cubra todo el ancho del elemento */
+    transition: background-color 0.3s, color 0.3s;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a:focus {
     background-color: #000; /* Fondo negro */
     color: #fff; /* Color del texto blanco */
 }
