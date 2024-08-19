@@ -11,7 +11,26 @@ body {
     color: #333;
 }
 
+@keyframes colorChangeH1 {
+    0% {
+        color: #000; /* Negro */
+    }
+    100% {
+        color: #fff; /* Blanco */
+    }
+}
+
+@keyframes colorChangeH2 {
+    0% {
+        color: #b22222; /* Rojo tomate */
+    }
+    100% {
+        color: #000; /* Negro */
+    }
+}
+
 .titulo h1 {
+    animation: colorChangeH1 2s ease-in-out infinite alternate;
     background: #b22222; /* Rojo tomate */
     color: #fff;
     display: flex;
@@ -19,6 +38,10 @@ body {
     padding: 1rem 2rem;
     position: relative;
     z-index: 10;
+}
+
+.mision h2, .vision h2, .categorias h2, .contacto h2 {
+    animation: colorChangeH2 2s ease-in-out infinite alternate;
 }
 
 header {
