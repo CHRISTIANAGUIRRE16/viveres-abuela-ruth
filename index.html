@@ -80,18 +80,18 @@
         <div class="categorias-grid">
             <div class="categoria-item">
                 <div class="categoria-image">
-                    <img src="frutas-verduras.jpeg" alt="Verduras y Frutas">
+                    <img src="snacks.jpeg" alt="Verduras y Frutas">
                 </div>
-                <h3>Verduras y Frutas</h3>
-                <p>Encuentra las mejores verduras y frutas frescas para tu hogar.</p>
+                <h3>Chocolates y Galletas</h3>
+                <p>Encuentra tus dulces preferidos.</p>
                 <a href="https://wa.me/+593984196889" class="pedido-btn">¡Realiza tu pedido ya!</a>
             </div>
             <div class="categoria-item">
                 <div class="categoria-image">
                     <img src="granos-cereales.jpg" alt="Granos y Cereales">
                 </div>
-                <h3>Granos y Cereales</h3>
-                <p>Descubre nuestra variedad de granos y cereales de alta calidad.</p>
+                <h3>Snacks</h3>
+                <p>Descubre nuestra variedad de snacks.</p>
                 <a href="https://wa.me/+593984196889" class="pedido-btn">¡Realiza tu pedido ya!</a>
             </div>
             <div class="categoria-item">
@@ -99,7 +99,7 @@
                     <img src="panaderia.jpeg" alt="Productos de Panadería">
                 </div>
                 <h3>Productos de Panadería</h3>
-                <p>Deliciosos productos de panadería frescos todos los días.</p>
+                <p>Delicioso pan frescos todos los días.</p>
                 <a href="https://wa.me/+593984196889" class="pedido-btn">¡Realiza tu pedido ya!</a>
             </div>
             <div class="categoria-item">
@@ -121,17 +121,35 @@
         </div>
     </section>
 
-    <section id="contacto" class="contacto">
-        <h2>Contacto</h2>
-        <a href="https://wa.me/+593984196889" class="whatsapp-link" target="_blank">Click aquí para enviar un mensaje al whatsApp</a>
-        <p>Encuéntranos en:</p>
-        <p>Quito, Ecuador, Parroquia La Merced, Barrio San Francisco, Calle César Enrique Balseca Y Luis Rivadeneira,
-            Conjunto San Francisco 2 Casa 5.</p>
+    <section id="formulario-pedido" class="formulario-pedido">
+        <h2>Realiza tu Pedido</h2>
+        <form id="pedidoForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <label for="productos">Productos:</label>
+            <textarea id="productos" name="productos" rows="4" required></textarea>
+
+            <button type="submit">Enviar Pedido</button>
+        </form>
     </section>
 
     <footer>
+        <section id="contacto" class="contacto">
+            <h1>Contacto</h1>
+            <a href="https://wa.me/+593984196889" class="whatsapp-link" target="_blank">Click aquí para enviar un
+                mensaje al whatsApp: +593 98 419 6889</a>
+            <b>
+                <p>Encuéntranos en:</p>
+                <p>Quito, Ecuador, Parroquia La Merced, Barrio San Francisco, Calle César Enrique Balseca Y Luis
+                    Rivadeneira,
+                    Conjunto San Francisco 2 Casa 5.</p>
+        </section>
         <p>&copy; 2024 Christian Aguirre Desarrollador De Software & Víveres Abuela Ruth</p>
-    </footer>
+    </footer></b>
 
     <script src="script.js"></script>
 </body>
