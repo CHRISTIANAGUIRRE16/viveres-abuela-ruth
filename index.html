@@ -15,7 +15,7 @@
         </div>
 
         <div class="header-image">
-            <img src="header-image.jpg" alt="Imagen de cabecera">
+            <video src="header-video.mp4" autoplay muted loop> </video>
         </div>
         <div class="header-content">
             <nav>
@@ -46,7 +46,7 @@
             <div class="slider-container">
                 <div class="slide">
                     <img src="slide1.jpg" alt="Oferta del día">
-                    <a href="https://wa.me/+593984196889" class="pedido-btn">
+                    <a href="https://wa.me/+593984196889" class="pedido-btn" target="_blank">
                         <div class="slide-text">Pregunta por nuestro servicio a domicilio!</div>
                     </a>
                 </div>
@@ -85,7 +85,7 @@
                 </div>
                 <h3>Chocolates y Galletas</h3>
                 <p>Encuentra tus dulces preferidos.</p>
-                <a href="https://wa.me/+593984196889" class="pedido-btn">¡Realiza tu pedido ya!</a>
+                <a href="https://wa.me/+593984196889" class="pedido-btn" target="_blank">¡Realiza tu pedido ya!</a>
             </div>
             <div class="categoria-item">
                 <div class="categoria-image">
@@ -93,7 +93,7 @@
                 </div>
                 <h3>Snacks</h3>
                 <p>Descubre nuestra variedad de snacks.</p>
-                <a href="https://wa.me/+593984196889" class="pedido-btn">¡Realiza tu pedido ya!</a>
+                <a href="https://wa.me/+593984196889" class="pedido-btn" target="_blank">¡Realiza tu pedido ya!</a>
             </div>
             <div class="categoria-item">
                 <div class="categoria-image">
@@ -101,7 +101,7 @@
                 </div>
                 <h3>Productos de Panadería</h3>
                 <p>Delicioso pan frescos todos los días.</p>
-                <a href="https://wa.me/+593984196889" class="pedido-btn">¡Realiza tu pedido ya!</a>
+                <a href="https://wa.me/+593984196889" class="pedido-btn" target="_blank">¡Realiza tu pedido ya!</a>
             </div>
             <div class="categoria-item">
                 <div class="categoria-image">
@@ -109,7 +109,7 @@
                 </div>
                 <h3>Bebidas</h3>
                 <p>Una amplia selección de bebidas para todas las ocasiones.</p>
-                <a href="https://wa.me/+593984196889" class="pedido-btn">¡Realiza tu pedido ya!</a>
+                <a href="https://wa.me/+593984196889" class="pedido-btn" target="_blank">¡Realiza tu pedido ya!</a>
             </div>
             <div class="categoria-item">
                 <div class="categoria-image">
@@ -117,7 +117,7 @@
                 </div>
                 <h3>Productos de Limpieza</h3>
                 <p>Todo lo que necesitas para mantener tu hogar limpio y ordenado.</p>
-                <a href="https://wa.me/+593984196889" class="pedido-btn">¡Realiza tu pedido ya!</a>
+                <a href="https://wa.me/+593984196889" class="pedido-btn" target="_blank">¡Realiza tu pedido ya!</a>
             </div>
         </div>
     </section>
@@ -126,13 +126,15 @@
         <h2>Realiza tu Pedido</h2>
         <form id="pedidoForm">
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre"  required>
+            <input type="text" id="nombre" name="nombre" required>
 
             <label for="direccion">Dirección:</label>
             <input type="text" id="direccion" name="direccion" required>
 
             <label for="productos">Productos:</label>
-            <textarea id="productos" name="productos" rows="4"  placeholder="Ingresa los productos que necesitas ejemplo : 1 atun mediano, 2lb de arroz etc..." required></textarea>
+            <textarea id="productos" name="productos" rows="4"
+                placeholder="Ingresa los productos que necesitas ejemplo : 1 atun mediano, 2lb de arroz etc..."
+                required></textarea>
 
             <button type="submit">Enviar Pedido</button>
         </form>
@@ -142,7 +144,7 @@
         <section id="contacto" class="contacto">
             <h1>Contacto</h1>
             <a href="https://wa.me/+593984196889" class="whatsapp-link" target="_blank">Click aquí para enviar un
-                mensaje al whatsApp: +593 98 419 6889</a>
+                mensaje al whatsApp: <br>+593 98 419 6889</a>
             <b>
                 <p>Encuéntranos en:</p>
                 <p>Quito, Ecuador, Parroquia La Merced, Barrio San Francisco, Calle César Enrique Balseca Y Luis

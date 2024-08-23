@@ -11,6 +11,22 @@ body {
     color: #333;
 }
 
+   /* Estilo para que el video ocupe todo el ancho de la pantalla */
+   .header-image {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Mantener la relación de aspecto 16:9 */
+    overflow: hidden;
+}
+
+.header-image video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajustar el video sin distorsionar */
+}
 
 @keyframes colorChangeH1 {
     0% {
@@ -337,3 +353,4 @@ footer {
     position: relative;
     z-index: 10;
 }
+

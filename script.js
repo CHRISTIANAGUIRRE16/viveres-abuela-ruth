@@ -53,4 +53,23 @@ document.addEventListener('DOMContentLoaded', () => {
         // Redirigir a la URL de WhatsApp
         window.open(url, '_blank');
     });
+
+    // Medidas de seguridad para dificultar la manipulación
+    // Deshabilitar clic derecho
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+
+    // Deshabilitar ciertas combinaciones de teclas
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+            e.preventDefault();
+        }
+        if ((e.ctrlKey && e.shiftKey && e.key === 'J') || (e.ctrlKey && e.key === 'U')) {
+            e.preventDefault();
+        }
+    });
+
+    // Advertencia legal en la consola (puede ser opcional)
+    console.log("%cAdvertencia: Este es un área de desarrolladores. La manipulación no autorizada del código está prohibida.", "color: red; font-size: 16px; font-weight: bold;");
 });
