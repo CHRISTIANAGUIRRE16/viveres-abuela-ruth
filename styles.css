@@ -11,6 +11,7 @@ body {
     color: #333;
 }
 
+
 @keyframes colorChangeH1 {
     0% {
         color: #000; /* Negro */
