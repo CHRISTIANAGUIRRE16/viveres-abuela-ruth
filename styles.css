@@ -11,22 +11,6 @@ body {
     color: #333;
 }
 
-   /* Estilo para que el video ocupe todo el ancho de la pantalla */
-   .header-image {
-    position: relative;
-    width: 100%;
-    padding-top: 56.25%; /* Mantener la relación de aspecto 16:9 */
-    overflow: hidden;
-}
-
-.header-image video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ajustar el video sin distorsionar */
-}
 
 @keyframes colorChangeH1 {
     0% {
@@ -57,19 +41,12 @@ body {
     z-index: 10;
 }
 
-.mision h2, .vision h2, .categorias h2, .contacto h2, .formulario-pedido h2 {
+.categorias h2, .contacto h2, .formulario-pedido h2 {
     animation: colorChangeH2 2s ease-in-out infinite alternate;
 }
 
 header {
     position: relative;
-}
-
-.header-image img {
-    width: 100%;
-    height: 600px; /* Ajusta la altura según tus necesidades */
-    object-fit: cover; /* Asegura que la imagen se recorte para llenar el contenedor sin distorsión */
-    display: block;
 }
 
 .header-content {
@@ -201,21 +178,9 @@ nav ul li a:focus {
     }
 }
 
-/* Sección Misión y Visión */
-.mision, .vision {
-    padding: 2rem 1rem;
-    text-align: center;
-}
-.mision h2, .vision h2, .categorias h2, .contacto h2 {
+/* Sección categorias y contacto*/
+.categorias h2, .contacto h2 {
     color: #a52a2a;
-}
-
-.mision {
-    background: #f8f8f8;
-}
-
-.vision {
-    background: #eee;
 }
 .categorias {
     background: #f4f4f4;
