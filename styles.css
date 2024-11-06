@@ -30,9 +30,9 @@ body {
     }
 }
 
-.titulo h1, .contacto h1 {
+.titulo h1 {
     animation: colorChangeH1 2s ease-in-out infinite alternate;
-    background: #b22222; /* Rojo tomate */
+    background-image: url("portada.png"); /* Rojo tomate */
     color: #fff;
     display: flex;
     justify-content: center;
